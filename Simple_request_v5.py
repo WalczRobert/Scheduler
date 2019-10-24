@@ -56,12 +56,12 @@ metadata.create_all(engine)
 bcolor = ('grey', 'white')
 wcolor = ('white', 'white')
 
-main_name_list =  ['Joe Wolter',
-             'Spencer Klocke',
-             'Jarrod Bogardus',
-             'Johnathan Harney',
-             'Rob Walczak',
-             'Jeremy Tjardes']
+main_name_list =  ['Jim Walter',
+             'Kevin Spacey',
+             'Jarrod Burgandy',
+             'Michael Haney',
+             'Rob Willcheck',
+             'Jeremy Jhonston']
 
 
 main_reason_list = ['Vacation',
@@ -142,7 +142,7 @@ while True:
         # check for douplicate dates, then reject or write to db (write name, start date, end date)
         #sf.check_date(startDate=values['input1'],endDate=values['input2'])
         sf.check_date(startDate=values['input1'],endDate=values['input2'],df=df)
-        successful =sf.add_details(name=values['_name_'],reason=values['_reason_'],startDate=values['input1'],endDate=values['input2'])
+        successful=sf.add_details(name=values['_name_'],reason=values['_reason_'],startDate=values['input1'],endDate=values['input2'])
         if not successful:
             #show message box indicating failure to add date
             pass
